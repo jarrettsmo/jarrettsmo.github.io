@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../CSS/w3.css">
+<link rel="stylesheet" href="../CSS/google-fonts.css">
+<link rel="stylesheet" href="../CSS/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- CSS Custom Styles -->
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+img {margin-bottom: -8px;}
+</style>
+</head>
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+<!-- Header with Slideshow -->
+<header class="w3-display-container w3-center">
+  <div class="w3-animate-opacity">
+    <img class="w3-image" src="../MEDIA/jarrett-smo-wide-right-1920 × 1080.png" alt="Profile of Jarrett Smolarkiewicz" style="min-width:500px" width="auto" height="100%">
+    <div class="w3-display-left w3-padding w3-hide-small" style="width:50%">
+      <div class="w3-cyan w3-text-white w3-padding-large w3-round-large">
+        <h1 class="w3-xlarge">Jarrett Smolarkiewicz</h1>
+        <p>Technical Writer, Trainer, Team Builder, Leader and Encourager</p>
+          <a style="padding:5px;" href="https://www.linkedin.com/in/jarrett-smolarkiewicz/" target="_blank"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+          <a style="padding:5px;" href="https://github.com/jarrettsmo" target="_blank"><i class="fa fa-github" style="font-size:24px"></i></a>
+          <a style="padding:5px;" href="https://www.youtube.com/playlist?list=PL8SzWYfm_KdyNoHJnn_BRJBf4Y1n4uXpd" target="_blank"><i class="fa fa-youtube-play" style="font-size:24px"></i></a>
+          <a style="padding:5px;" href="mailto:technosmo@outlook.com" target="_blank"><i class="fa fa-envelope" style="font-size:24px"></i></a>
+        <hr class="w3-opacity">
+        <p><button class="w3-button w3-block w3-indigo w3-padding-24 w3-round" onclick="download_resume()">View and Download Resume</button></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+    function download_resume() {
+      const link = document.createElement('a');
+      link.href = '../DOCUMENTS/Jarrett_Smolarkiewicz_Resume_and_References.pdf'; // Path to resume file
+      link.target = '_blank' // Opens resume file in new browser page
+      link.download = 'Jarrett_Smolarkiewicz_Resume_and_References.pdf';   // Filename users will see
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
